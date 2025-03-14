@@ -18,6 +18,17 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager
 
 Ensure PostgreSQL libraries are accessible by adding them to the system's environment variables.
 
+3️⃣ **Update `stack.yaml` PostgreSQL Path:**
+
+Modify your `stack.yaml` file to include your PostgreSQL installation path:
+
+```yaml
+extra-lib-dirs:
+  - "C:\\Program Files\\PostgreSQL\\16\\lib"
+extra-include-dirs:
+  - "C:\\Program Files\\PostgreSQL\\16\\include"
+```
+
 ### 🛠 Running the Project
 
 #### 🎯 Running the Haskell Backend
@@ -63,6 +74,17 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager
 2️⃣ **Configurar PostgreSQL en el PATH:**
 
 Asegúrate de que las librerías de PostgreSQL sean accesibles agregándolas a las variables de entorno del sistema.
+
+3️⃣ **Actualizar la ruta de PostgreSQL en `stack.yaml`:**
+
+Modifica tu archivo `stack.yaml` para incluir la ruta de tu instalación de PostgreSQL:
+
+```yaml
+extra-lib-dirs:
+  - "C:\\Program Files\\PostgreSQL\\16\\lib"
+extra-include-dirs:
+  - "C:\\Program Files\\PostgreSQL\\16\\include"
+```
 
 ### 🛠 Ejecutar el Proyecto
 
